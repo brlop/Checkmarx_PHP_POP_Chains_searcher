@@ -1,0 +1,5 @@
+CxList magicMethodsDeclarations = Find_POP_Chain_Magic_Methods_Declarations();
+
+CxList include = Find_File_Includes();
+
+result = magicMethodsDeclarations.InfluencingOn(include);

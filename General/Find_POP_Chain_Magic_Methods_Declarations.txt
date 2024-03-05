@@ -1,0 +1,3 @@
+CxList methodDeclarations = All.FindByType(typeof(MethodDecl));
+// Apparently MethodDecl never influence anything, so we need to use the elements inside those MethodDecl instead by using GetByAncs
+result = All.GetByAncs(methodDeclarations.FindByShortNames(new List<string>(new string[] {"__wakeup", "__destruct", "__construct", "__call", "__callStatic", "__get", "__set", "__isset", "__unset", "__sleep", "__toString", "__invoke", "__set_state", "__clone"})));
